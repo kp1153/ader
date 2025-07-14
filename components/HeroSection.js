@@ -1,31 +1,60 @@
 "use client";
+import Image from "next/image";
 
-import React, { useState, useEffect } from 'react';
-import { Globe, ArrowRight, CheckCircle, Star, Users, Languages, Clock, Shield } from 'lucide-react';
-
-const TranslationHero = () => {
-  const [mounted, setMounted] = useState(false);
-
-  useEffect(() => {
-    setMounted(true);
-  }, []);
-
+export default function HeroSection() {
   return (
-    <section className="flex flex-col items-center justify-center p-8">
-      <img
-        src="/1.jpeg"
-        alt="Translation Hero"
-        className="w-full max-w-4xl rounded-2xl shadow-lg"
-      />
+    <section className="bg-black text-white min-h-[120vh] px-6 py-16">      
+      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        
+        {/* Left Column: Text */}
+        <div className="space-y-5 text-sm leading-relaxed">
+          <h1 className="text-3xl md:text-4xl font-bold">
+            Where Accuracy Meets Integrity in Translation
+          </h1>
 
-      <h1 className="text-4xl font-bold mt-6 text-center">
-        Welcome to Our Translation Agency
-      </h1>
-      <p className="text-lg text-gray-600 mt-2 text-center max-w-2xl">
-        We provide high-quality certified translation services worldwide. Trusted by businesses and individuals.
-      </p>
+          <p>
+            We provide high-quality translation services delivered by professional translators.
+            Our offerings include both pure translation and MTPE (Machine Translation Post Editing),
+            edited by skilled linguists to ensure accuracy, clarity, and consistency.
+          </p>
+
+          <p>
+            MTPE offers the speed of AI with the precision of human review. Whether you need certified sworn translations
+            or fast turnaround post-edited machine output, we deliver exactly what your project demands — nothing less.
+          </p>
+
+          <div className="border-t border-white/30 pt-4 space-y-3">
+            <h2 className="text-xl font-semibold">Certified Sworn Translation</h2>
+            <p>This term varies from country to country but generally includes:</p>
+
+            <ul className="list-disc list-inside space-y-1 pl-4 text-sm">
+              <li>The source-language (original) text</li>
+              <li>The target-language (translated) text</li>
+              <li>
+                A notarized statement asserting that the translation is accurate and complete — 
+                known as a &ldquo;Certificate of Accuracy.&rdquo;
+              </li>
+            </ul>
+
+            <p className="text-sm">
+              This statement may sometimes include the translator&apos;s CV, though that&apos;s tradition, not requirement.
+              Anyone can technically provide a certified translation — the Notary Public only confirms the identity
+              of the signer, not the quality of the translation.
+            </p>
+          </div>
+        </div>
+
+        {/* Right Column: Image */}
+        <div>
+          <Image
+            src="/1.jpeg"
+            alt="Ader Global Translator"
+            width={600}
+            height={400}
+            className="w-full rounded-lg shadow-lg object-cover"
+          />
+        </div>
+      </div>
     </section>
   );
-};
-
-export default TranslationHero;
+}

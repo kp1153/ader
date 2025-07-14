@@ -1,37 +1,35 @@
 export default function Footer() {
   return (
-    <footer className="fixed bottom-0 left-0 w-full z-50 bg-gradient-to-r from-purple-700 via-pink-600 to-red-500 text-white py-8 px-6">
-      <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-6">
-        
-        <div>
-          <h2 className="text-xl font-bold mb-2">Ader Global</h2>
-          <p className="text-sm">
-            Certified Sworn Translators with <strong>26 Years</strong> of Excellence.
-          </p>
+    <footer className="bg-yellow-100 text-red-700 py-8 px-6 border-t border-red-200">
+      <div className="max-w-3xl mx-auto space-y-4 text-sm leading-relaxed">
+        <p>
+          We specialize in high-quality translation services done by professional translators.
+        </p>
+        <p>
+          At the same time, we understand the evolving needs of global companies, many of whom now prefer Machine Translation Post Editing (MTPE) for cost and speed.
+        </p>
+        <p>
+          That&apos;s why we offer both options:<br />
+          • Pure translation — handled by seasoned professionals<br />
+          • MTPE — edited by skilled linguists for accuracy and natural tone
+        </p>
+        <p>
+          Our focus is always on quality, clarity, and meeting your deadlines.
+        </p>
+        <div className="text-xs text-red-600 mt-4">
+          &copy; {new Date().getFullYear()} Ader Global. All rights reserved.
         </div>
-
-        <div>
-          <h3 className="text-lg font-semibold mb-2">Our Services</h3>
-          <ul className="text-sm space-y-1">
-            <li>MTPE Light</li>
-            <li>MTPE Full (Human Grade)</li>
-            <li>Deadline-Focused Delivery</li>
-            <li>Value-for-Price Rates</li>
-          </ul>
+        <div className="text-xs mt-2">
+          Developed by:{" "}
+          <a
+            href="https://www.hamaramorcha.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 underline"
+          >
+            www.hamaramorcha.com
+          </a>
         </div>
-
-        <div>
-          <h3 className="text-lg font-semibold mb-2">Contact Us</h3>
-          <p className="text-sm">📩 aderglobal@gmail.com</p>
-          <p className="text-sm mt-2">We respect your deadlines — always.</p>
-          <p className="text-sm mt-1 italic">
-            We offer both MTPE Full (Human Grade) and MTPE Light — based on your needs.
-          </p>
-        </div>
-      </div>
-
-      <div className="text-center mt-6 text-xs text-white/80">
-        &copy; {new Date().getFullYear()} Ader Global. All rights reserved.
       </div>
     </footer>
   );
