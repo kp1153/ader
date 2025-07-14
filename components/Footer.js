@@ -19,16 +19,7 @@ export default function Footer() {
         <div className="text-xs text-red-600 mt-4">
           &copy; {new Date().getFullYear()} Ader Global. All rights reserved.
         </div>
-        <div className="text-xs mt-2">
-          Developed by:{" "}
-          <a
-            href="https://www.hamaramorcha.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-blue-600 underline"
-          >
-            www.hamaramorcha.com
-          </a>
+        <div className="text-xs mt-2">          
         </div>
       </div>
     </footer>

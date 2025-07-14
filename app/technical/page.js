@@ -45,11 +45,6 @@ export default function TechnicalTranslationPage() {
             Technical translation can also include specialized branches like <em>automotive translation</em>, <em>aerospace manuals</em>,
             <em>IT documentation</em>, and more.
           </p>
-
-          <p className="font-medium text-indigo-700">
-            At our agency, we offer precise, industry-grade technical translation services that combine expert-level knowledge
-            with native-quality fluency — ensuring accuracy, compliance, and clarity.
-          </p>
         </section>
       </div>
     </main>

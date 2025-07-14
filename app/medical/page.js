@@ -34,14 +34,7 @@ export default function MedicalTranslationPage() {
             <li>Proofreading for formatting, punctuation, and layout integrity</li>
             <li>In-country review by a native-speaking medical expert</li>
           </ul>
-
-          <p>
-            At our agency, we manage both the linguistic and technical aspects of medical translation.
-            <br />
-            <span className="font-medium text-indigo-700">
-              Our specialized medical translation team ensures precise, timely, and fully compliant deliverables — every time.
-            </span>
-          </p>
+       
         </section>
       </div>
     </main>
